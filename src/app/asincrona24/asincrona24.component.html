@@ -1,0 +1,27 @@
+<section>
+  <section class="m-5">
+
+    <section>
+      <h1>ANGULAR MATERIAL <img src="../../favicon.ico" alt=""></h1>
+      
+    </section>
+    <section class="form border m-1 p-5">
+      <ol>
+      <li>
+        <mat-form-field appearance="fill">
+          <input matInput placeholder="Escribe aqui tu nombre" [(ngModel)]="name">
+        </mat-form-field>
+      </li>
+
+      <li>
+        <button (click)="openDialog()" mat-raised-button color="warn" type="submit">Abrir dialog</button>
+      </li>
+
+      <li *ngIf="animal">
+        Tu deporte favorito es: <i>{{animal}}</i>
+      </li>
+    </ol>
+    </section>
+
+  </section>
+</section>
